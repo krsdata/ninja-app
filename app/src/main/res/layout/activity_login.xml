@@ -40,12 +40,16 @@
                     android:background="@drawable/circle_green"
                     android:backgroundTint="@color/white">
 
-                    <ImageView
+                    <TextView
                         android:layout_width="@dimen/_60sdp"
                         android:layout_height="@dimen/_60sdp"
                         android:layout_centerInParent="true"
-                        android:src="@drawable/logo_dark"
-                        android:scaleType="fitCenter"
+                         android:text="Ninja"
+                        android:textColor="@color/fab"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:fontFamily="@font/circular_medium"
+                        android:textSize="22sp"
                         android:gravity="center" />
                 </RelativeLayout>
 
@@ -106,6 +110,7 @@
             <ImageView
                 android:layout_width="@dimen/_100sdp"
                 android:layout_height="@dimen/_50sdp"
+                android:visibility="gone"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/logo_banner" />
 

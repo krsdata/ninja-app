@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/grey_lighter_dense"
-        tools:context="skoreon.fantasy.CreateTeamActivity"
+        tools:context="ninja.fantasy.CreateTeamActivity"
         android:orientation="vertical"
 
         >
@@ -27,13 +27,13 @@
                 android:id="@+id/linear_top_bar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gradient"
+                android:background="@color/colorPrimary"
                 android:layout_alignParentTop="true">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_60sdp"
-                    android:layout_alignParentTop="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_12sdp"
                     android:gravity="top">
 
                     <ImageView
@@ -63,6 +63,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="10h 21m left"
+                        android:layout_marginTop="@dimen/_12sdp"
                        android:layout_centerHorizontal="true"
                         android:gravity="center"
                         android:layout_below="@+id/head"
@@ -119,7 +120,7 @@
                     android:layout_marginTop="@dimen/_4sdp"
                     android:layout_marginBottom="@dimen/_4sdp"
                     android:background="@drawable/bg_text"
-                    android:backgroundTint="@color/color_card">
+                    android:backgroundTint="@color/fab">
 
 
                     <LinearLayout
@@ -494,7 +495,7 @@
                     android:layout_height="@dimen/_40sdp"
                     app:tabTextColor="@color/white"
                     android:background="@drawable/button_selector"
-                    android:backgroundTint="@color/fab"
+                    android:backgroundTint="@color/colorPrimary"
                     app:tabIndicatorGravity="bottom"
                     app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
                     app:tabIndicatorHeight="3dp"

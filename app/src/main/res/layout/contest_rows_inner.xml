@@ -269,7 +269,7 @@
                    android:layout_width="0dp"
                    android:layout_weight="1"
                    android:layout_height="@dimen/_20sdp"
-                   android:backgroundTint="@color/color_card"
+                   android:backgroundTint="@color/colorPrimary"
                    android:layout_marginEnd="@dimen/_10sdp"
                    android:background="@drawable/rounded_btn_pink"
                    android:layout_gravity="center_vertical"

@@ -19,24 +19,23 @@
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/background_default"
             android:orientation="vertical"
-            tools:context="skoreon.fantasy.CreateTeamActivity">
+            tools:context="ninja.fantasy.CreateTeamActivity">
 
             <RelativeLayout
                 android:id="@+id/tool"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_80sdp"
-                android:layout_alignParentTop="true"
-                android:background="@drawable/gradient">
+                android:layout_height="@dimen/_60sdp"
+                android:background="@color/colorPrimary"
+                android:layout_alignParentTop="true">
 
 
                 <androidx.appcompat.widget.Toolbar
                     android:id="@+id/toolbar"
                     style="@style/ToolbarTheme2"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_60sdp"
-                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="@dimen/_30sdp"
                     android:orientation="vertical">
 
                     <RelativeLayout
@@ -68,13 +67,6 @@
                     </RelativeLayout>
                 </androidx.appcompat.widget.Toolbar>
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_20sdp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentBottom="true"
-                    android:background="@drawable/bottom"
-                    android:backgroundTint="@color/grey_lighter_dense" />
 
             </RelativeLayout>
 

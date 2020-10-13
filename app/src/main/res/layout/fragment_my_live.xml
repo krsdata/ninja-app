@@ -53,7 +53,7 @@
             android:text="VIEW UPCOMING MATCHES"
             android:textSize="10sp"
             android:padding="10dp"
-            android:backgroundTint="@color/color_card"
+            android:backgroundTint="@color/colorPrimary"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/montserratsemibold"
             android:background="@drawable/default_rounded_button_sportsfight"

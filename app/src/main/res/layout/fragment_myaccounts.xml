@@ -32,7 +32,7 @@
                         android:layout_height="@dimen/_100sdp"
                         android:background="@drawable/bg_text"
                         android:layout_marginTop="30dp"
-                        android:backgroundTint="@color/color_card"
+                        android:backgroundTint="@color/colorPrimary"
                         android:foreground="?android:attr/selectableItemBackground">
 
                         <LinearLayout

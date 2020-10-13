@@ -95,21 +95,20 @@
              android:orientation="horizontal"
              android:layout_marginRight="5dip"
              android:gravity="right">
+
             <TextView
                 android:id="@+id/contest_entry_prize"
                 android:layout_width="75dp"
                 android:layout_height="wrap_content"
-                android:text="Rs39"
-                android:gravity="center"
-                android:textSize="@dimen/header_size"
-                android:padding="6dp"
                 android:layout_gravity="center_vertical"
                 android:background="@drawable/default_rounded_button_sportsfight"
-                android:textColor="@color/white"
-                android:backgroundTint="@color/color_card"
-                android:textStyle="bold"
                 android:fontFamily="@font/open_sans_semibold"
-                />
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="Rs39"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header_size"
+                android:textStyle="bold" />
 
 
          </LinearLayout>

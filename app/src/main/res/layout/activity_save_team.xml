@@ -14,14 +14,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/grey_lighter_dense"
-        tools:context="skoreon.fantasy.CreateTeamActivity"
+        tools:context="ninja.fantasy.CreateTeamActivity"
         android:orientation="vertical"
         >
         <RelativeLayout
             android:id="@+id/linear_top_bar"
             android:layout_width="match_parent"
-            android:background="@drawable/gradient"
-            android:layout_height="@dimen/_80sdp"
+            android:background="@color/colorPrimary"
+            android:layout_height="@dimen/_60sdp"
             android:layout_alignParentTop="true">
 
             <RelativeLayout
@@ -176,7 +176,7 @@
                 android:padding="10dp"
                 android:layout_marginLeft="18dip"
                 android:fontFamily="@font/montserratsemibold"
-                android:backgroundTint="@color/color_card"
+                android:backgroundTint="@color/colorPrimary"
                 android:background="@drawable/default_rounded_button_sportsfight"
                 android:textColor="@color/white"
                 />

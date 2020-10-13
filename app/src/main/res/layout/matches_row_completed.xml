@@ -3,140 +3,245 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardElevation="12dp"
+    android:layout_marginLeft="@dimen/_8sdp"
+    android:layout_marginTop="@dimen/matches_view_top_margin"
+    android:layout_marginRight="@dimen/_8sdp"
+    app:cardBackgroundColor="@color/white"
     app:cardCornerRadius="6dp"
-    app:cardBackgroundColor="@color/color_card"
-    android:layout_marginTop="@dimen/_6sdp"
-    android:layout_marginLeft="@dimen/matches_view_left_margin_consolidated"
-    android:layout_marginRight="@dimen/matches_view_left_margin_consolidated"
-    >
+    app:cardElevation="12dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_6sdp"
-        >
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_12sdp">
 
         <LinearLayout
-            android:layout_width="@dimen/_50sdp"
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:orientation="vertical"
-            android:layout_alignParentStart="true">
-
-            <RelativeLayout
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="@dimen/_36sdp"
-                android:background="@drawable/bg_text"
-                android:backgroundTint="@color/white">
-                
-                <ImageView
-                    android:id="@+id/teama_logo"
-                    android:layout_width="35dp"
-                    android:layout_height="25dp"
-                    android:src="@drawable/flag_indian"
-                    android:layout_centerInParent="true"
-                    android:scaleType="centerCrop"/>
-            </RelativeLayout>
-
-            <TextView
-                android:id="@+id/upcoming_opponent1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="12sp"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:textColor="@color/white"
-                android:fontFamily="@font/montserrat_bold"
-                android:text="AAD"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="@dimen/_6sdp"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-           android:layout_centerInParent="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/tournament_title"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="You Won"
-                android:fontFamily="@font/montserrat_regular"
-                android:textColor="@color/white"
-                android:layout_gravity="center_horizontal"
-                android:textSize="@dimen/_8sdp"/>
+                android:fontFamily="@font/circular_medium"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text="Cricket League T10"
+                android:textColor="@color/text"
+                android:textSize="@dimen/small_info_size" />
 
-            <TextView
-                android:id="@+id/winning_price"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="12sp"
-                android:textColor="@color/white"
-                android:fontFamily="@font/montserrat_bold"
-                android:text="395"
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
                 android:layout_marginTop="@dimen/_6sdp"
-                android:layout_gravity="center_horizontal" />
-
-            <TextView
-                android:id="@+id/completed_match_status"
-                android:layout_width="@dimen/_60sdp"
-                android:layout_height="@dimen/_20sdp"
-                android:fontFamily="@font/montserrat_medium"
-                android:text="Completed"
-                android:gravity="center"
-                android:layout_gravity="center_horizontal"
-                android:backgroundTint="@color/fab"
-                android:background="@drawable/orange_button_bg"
-                android:textColor="@color/white"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:textSize="@dimen/_8sdp" />
+                android:background="@color/background_default" />
 
         </LinearLayout>
-        
-        <LinearLayout
-            android:layout_width="@dimen/_50sdp"
+
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:orientation="vertical">
+            android:orientation="horizontal"
+            android:layout_below="@id/ll_title"
+            android:layout_marginTop="@dimen/matches_gap_between_each_views"
+            >
 
-            <RelativeLayout
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="@dimen/_36sdp"
-                android:background="@drawable/bg_text"
-                android:backgroundTint="@color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <View
+                        android:id="@+id/countrycolorview"
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        android:background="@color/red"
+                        android:layout_centerVertical="true"
+                        />
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/teama_logo"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/flag_indian"
+                        android:layout_marginLeft="30dp"
+                        android:scaleType="centerCrop"
+                        />
+                </RelativeLayout>
 
-                <ImageView
-                    android:id="@+id/teamb_logo"
-                    android:layout_width="35dp"
-                    android:layout_height="25dp"
-                    android:src="@drawable/flag_newzeland"
-                    android:layout_centerInParent="true"
-                    android:scaleType="centerCrop"/>
-            </RelativeLayout>
+                <TextView
+                    android:id="@+id/upcoming_opponent1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IND"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/country_code_size"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dip"
+                    android:fontFamily="@font/open_sans_semibold"
+                    />
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/upcoming_opponent2"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="12sp"
-                android:textColor="@color/white"
-                android:fontFamily="@font/montserrat_bold"
-                android:text="NZ"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="@dimen/_6sdp"/>
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You Won"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/_8sdp"/>
+
+                <TextView
+                    android:id="@+id/winning_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="395"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/completed_match_status"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Completed"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/fab"
+                    android:background="@drawable/orange_button_bg"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_8sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/upcoming_opponent2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NZ"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/country_code_size"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/open_sans_semibold"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <View
+                        android:id="@+id/countrybcolorview"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="35dp"
+                        android:background="@color/red"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"/>
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/teamb_logo"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/flag_newzeland"
+                        android:scaleType="centerCrop"
+                        />
+                </RelativeLayout>
 
 
-        </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
 
+        <RelativeLayout
+            android:id="@+id/opp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </RelativeLayout>
 
     </RelativeLayout>
 
+    <LinearLayout
+        android:id="@+id/upcoming_linear_contest_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/matches_view_left_margin_inner"
+        android:layout_marginTop="@dimen/matches_gap_between_each_views"
+        android:layout_marginRight="@dimen/matches_view_right_margin_inner"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/upcoming_contest_name"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:background="@color/green_light"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:padding="3dip"
+            android:text="Mega"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_info_size" />
+
+        <TextView
+            android:id="@+id/upcoming_contest_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="₹1Crore"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_info_size" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/free_view"
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@color/green_light"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:padding="3dip"
+        android:src="@drawable/left_triangle"
+        android:text="FREE"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small_info_size" />
 
 </androidx.cardview.widget.CardView>

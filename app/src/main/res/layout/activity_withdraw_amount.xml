@@ -12,14 +12,14 @@
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="skoreon.fantasy.DocumentsListActivity"
+        tools:context="ninja.fantasy.DocumentsListActivity"
         android:orientation="vertical"
         android:background="@color/grey_lighter_dense"
         >
         <RelativeLayout
             android:id="@+id/tool"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_80sdp"
+            android:layout_height="@dimen/_60sdp"
             android:layout_alignParentTop="true"
             android:background="@drawable/gradient">
 
@@ -59,13 +59,7 @@
                 </RelativeLayout>
             </androidx.appcompat.widget.Toolbar>
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_20sdp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentBottom="true"
-                android:background="@drawable/bottom"
-                android:backgroundTint="@color/grey_lighter_dense"/>
+
 
         </RelativeLayout>
 
@@ -121,7 +115,6 @@
                     android:orientation="horizontal"
                     android:layout_marginTop="10dp"
                     android:padding="8dp"
-                    android:backgroundTint="@color/color_card"
                     android:background="@drawable/rounded_corner_filled_blue"
                     >
 

@@ -57,6 +57,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/logo"
+                    android:visibility="gone"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"/>
 
@@ -65,13 +66,7 @@
 
         </androidx.appcompat.widget.Toolbar>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_20sdp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:background="@drawable/bottom"
-            android:backgroundTint="@color/grey_lighter_dense"/>
+
 
     </RelativeLayout>
 

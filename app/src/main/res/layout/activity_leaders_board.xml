@@ -14,14 +14,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/grey_lighter_dense"
-        tools:context="skoreon.fantasy.CreateTeamActivity"
+        tools:context="ninja.fantasy.CreateTeamActivity"
         android:orientation="vertical"
         >
         <LinearLayout
             android:id="@+id/linear_top_bar"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_60sdp"
-            android:background="@drawable/gradient"
+            android:background="@color/colorPrimary"
             android:orientation="vertical"
             >
             <RelativeLayout
@@ -90,7 +90,7 @@
                 app:cardElevation="12dp"
                 android:layout_below="@+id/linear_top_bar"
                 app:cardCornerRadius="6dp"
-                app:cardBackgroundColor="@color/color_card"
+                app:cardBackgroundColor="@color/fab"
                android:layout_margin="@dimen/_6sdp"
                 >
 

@@ -14,22 +14,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/grey_lighter_dense"
-        tools:context="skoreon.fantasy.ContestActivity"
+        tools:context="ninja.fantasy.ContestActivity"
         >
 
         <LinearLayout
             android:id="@+id/linear_top_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
             android:layout_marginBottom="@dimen/_4sdp"
             android:orientation="vertical"
             >
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_60sdp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="top"
                 android:gravity="top"
-                android:background="@drawable/gradient"
+               android:layout_marginBottom="@dimen/_12sdp"
+                android:background="@color/colorPrimary"
                 android:orientation="horizontal"
                 >
                 <ImageView
@@ -76,78 +78,75 @@
                     android:layout_marginLeft="8dip"/>
             </RelativeLayout>
 
-
-        </LinearLayout>
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/linear_teams"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardElevation="12dp"
-            android:layout_below="@+id/linear_top_bar"
-            app:cardCornerRadius="6dp"
-            app:cardBackgroundColor="@color/color_card"
-            android:layout_marginLeft="@dimen/matches_view_left_margin_consolidated"
-            android:layout_marginRight="@dimen/matches_view_left_margin_consolidated"
-            >
-
-            <RelativeLayout
+            <androidx.cardview.widget.CardView
+                android:id="@+id/linear_teams"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_6sdp"
+                app:cardElevation="12dp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                app:cardCornerRadius="6dp"
+                app:cardBackgroundColor="@color/fab"
+                android:layout_marginLeft="@dimen/matches_view_left_margin_consolidated"
+                android:layout_marginRight="@dimen/matches_view_left_margin_consolidated"
                 >
 
-                <LinearLayout
-                    android:layout_width="@dimen/_60sdp"
+                <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:id="@+id/ll1"
-                    android:orientation="vertical"
-                    android:layout_alignParentStart="true">
+                    android:layout_margin="@dimen/_6sdp"
+                    >
 
-                    <RelativeLayout
-                        android:layout_width="@dimen/_50sdp"
-                        android:layout_height="@dimen/_35sdp"
-                        android:background="@drawable/bg_text"
-                        android:backgroundTint="@color/white">
+                    <LinearLayout
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/ll1"
+                        android:orientation="vertical"
+                        android:layout_alignParentStart="true">
 
-                        <ImageView
-                            android:id="@+id/teama_logo"
-                            android:layout_width="35dp"
-                            android:layout_height="25dp"
-                            android:src="@drawable/flag_indian"
-                            android:layout_centerInParent="true"
-                            android:scaleType="centerCrop"/>
-                    </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="@dimen/_50sdp"
+                            android:visibility="gone"
+                            android:layout_height="@dimen/_35sdp"
+                            android:background="@drawable/bg_text"
+                            android:backgroundTint="@color/white">
+
+                            <ImageView
+                                android:id="@+id/teama_logo"
+                                android:layout_width="35dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/flag_indian"
+                                android:layout_centerInParent="true"
+                                android:scaleType="centerCrop"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/teamsa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_12sdp"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="AAD"
+                            android:gravity="center_vertical"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_6sdp"/>
+
+                    </LinearLayout>
 
                     <TextView
-                        android:id="@+id/teamsa"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="@dimen/_12sdp"
-                        android:maxLines="1"
-                        android:singleLine="true"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/montserrat_bold"
-                        android:text="AAD"
-                        android:gravity="center_vertical"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="@dimen/_6sdp"/>
-
-                </LinearLayout>
-
-                <TextView
                         android:id="@+id/matchTimer"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/circular_medium"
                         android:text="Completed"
-                      android:layout_centerVertical="true"
-                    android:layout_marginEnd="@dimen/_6sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_6sdp"
                         android:gravity="center"
-                       android:textStyle="bold"
-                         android:layout_toEndOf="@+id/ll1"
+                        android:textStyle="bold"
+                        android:layout_toEndOf="@+id/ll1"
                         android:layout_toStartOf="@id/ll3"
                         android:layout_alignParentTop="true"
                         android:textColor="@color/white"
@@ -155,54 +154,61 @@
 
 
 
-                <LinearLayout
-                    android:layout_width="@dimen/_50sdp"
-                    android:id="@+id/ll3"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:orientation="vertical">
-
-                    <RelativeLayout
+                    <LinearLayout
                         android:layout_width="@dimen/_50sdp"
-                        android:layout_height="@dimen/_35sdp"
-                        android:background="@drawable/bg_text"
-                        android:backgroundTint="@color/white">
-
-                        <ImageView
-                            android:id="@+id/teamb_logo"
-                            android:layout_width="@dimen/_35sdp"
-                            android:layout_height="@dimen/_25sdp"
-                            android:src="@drawable/flag_newzeland"
-                            android:layout_centerInParent="true"
-                            android:scaleType="centerCrop"/>
-                    </RelativeLayout>
-
-                    <TextView
-                        android:id="@+id/teamsb"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/ll3"
                         android:layout_height="wrap_content"
-                        android:textSize="@dimen/_14sdp"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/montserrat_bold"
-                        android:text="NZ"
-                        android:maxLines="1"
-                        android:singleLine="true"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="@dimen/_6sdp"/>
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/_50sdp"
+                            android:visibility="gone"
+                            android:layout_height="@dimen/_35sdp"
+                            android:background="@drawable/bg_text"
+                            android:backgroundTint="@color/white">
+
+                            <ImageView
+                                android:id="@+id/teamb_logo"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:src="@drawable/flag_newzeland"
+                                android:layout_centerInParent="true"
+                                android:scaleType="centerCrop"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/teamsb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_14sdp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="NZ"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_6sdp"/>
 
 
-                </LinearLayout>
+                    </LinearLayout>
 
 
 
-            </RelativeLayout>
+                </RelativeLayout>
 
 
-        </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
 
         <RelativeLayout
-            android:layout_below="@id/linear_teams"
+            android:layout_below="@id/linear_top_bar"
             android:layout_width="match_parent"
             android:layout_marginTop="@dimen/_6sdp"
             android:layout_height="match_parent">
@@ -211,7 +217,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:tabTextColor="@color/text"
-                app:tabIndicatorColor="@color/fab"
+                app:tabIndicatorColor="@color/colorPrimary"
                 app:tabIndicatorGravity="bottom"
                 app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
                 app:tabGravity="fill"

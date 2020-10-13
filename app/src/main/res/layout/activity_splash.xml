@@ -10,12 +10,21 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:fitsSystemWindows="true"
+        android:background="@color/colorPrimary"
         android:layout_height="match_parent">
-        <ImageView
+        <TextView
             android:id="@+id/parent_splash_background"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/splash"/>
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="NINJA"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:fontFamily="@font/circular_medium"
+            android:textSize="@dimen/_40sdp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            />
     </RelativeLayout>
 
 </layout>
