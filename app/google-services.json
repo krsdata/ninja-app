@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "206807931082",
+    "firebase_url": "https://ninja11.firebaseio.com",
+    "project_id": "ninja11",
+    "storage_bucket": "ninja11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206807931082:android:cd009d1e6eed4a62a93c33",
+        "android_client_info": {
+          "package_name": "ninja11.fantasy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206807931082-nhtt8h32279i2id2ft0ncnn7lg50ojrm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ninja11.fantasy",
+            "certificate_hash": "0c41d49f02f219628b2bb734d1b4e90b0fc7510a"
+          }
+        },
+        {
+          "client_id": "206807931082-tkp1kolmj7lq4v259qdsgci5m38fk1ug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPmLMnDH8RakpklEbGLo8RdN85K4gEy8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206807931082-tkp1kolmj7lq4v259qdsgci5m38fk1ug.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

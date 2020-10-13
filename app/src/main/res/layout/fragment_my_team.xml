@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="ninja11.fantasy.ui.home.FixtureCricketFragment" />
+    </data>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_lighter_dense">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/myteam_refresh"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_6sdp"
+        android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_my_team"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp"
+        android:clipToPadding="false"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:id="@+id/linear_empty_contest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You haven't created a team yet!"
+            />
+        <ImageView
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo_dark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The first step to winning starts here."
+            />
+
+        <TextView
+            android:id="@+id/btn_create_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREATE A TEAM"
+            android:textSize="10sp"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:background="@drawable/default_rounded_button_sportsfight"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+     <ProgressBar
+         android:id="@+id/progress_myteam"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,63 @@
+//getMatches Api
+
+{
+  "status": "success",
+  "data": [
+    {
+      "joined_match_model": [
+        {
+          "match_title": "",
+          "country1_name": "",
+          "country2_name": "",
+          "match_type": "",
+          "match_status": ""
+        },{
+          "match_title": "",
+          "country1_name": "",
+          "country2_name": "",
+          "match_type": "",
+          "match_status": ""
+        },{
+          "match_title": "",
+          "country1_name": "",
+          "country2_name": "",
+          "match_type": "",
+          "match_status": ""
+        }
+      ]
+    },
+    {
+      "match_banners": [
+        {
+          "banner_url": ""
+        },{
+          "banner_url": ""
+        },{
+          "banner_url": ""
+        }
+      ]
+    },{
+      "upcoming_matches": [
+        {
+          "match_title": "",
+          "country1_name": "",
+          "country2_name": "",
+          "match_type": "",
+          "match_status": "",
+          "start_time": "",
+          "end_time": "",
+          "is_match_active":true
+        },{
+          "match_title": "",
+          "country1_name": "",
+          "country2_name": "",
+          "match_type": "",
+          "match_status": "",
+          "start_time": "",
+          "end_time": "",
+          "is_match_active":true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">Ninja11</string>
+    <string name="title_home">Home</string>
+    <string name="title_mymatches">Matches</string>
+    <string name="title_account">Accounts</string>
+    <string name="title_more">More</string>
+    <string name="title_notification">Notification</string>
+    <string name="notifications_admin_channel_name">SportsFightChannel</string>
+    <string name="notifications_admin_channel_description">This is application descriptions</string>
+    <string name="gcm_default_sender_id">"359813752505"</string>
+    <string name="default_notification_channel_id">Sportfight</string>
+    <string name="screen_name_login">Login</string>
+    <string name="screen_name_register">Register</string>
+    <!-- <string name="default_web_client_id">359813752505-avldpfjpna6f1ib5bodn9m22h2sj5tgp.apps.googleusercontent.com</string>-->
+    <string name="privacy_policies">By signing up,you agree to SkoreOn TERMS OF USE and PRIVACY POLICY</string>
+
+    <string name="activity_type_contest">Contest</string>
+    <string name="activity_type_create_team">Create Team</string>
+
+    <string name="game_type_cricket">Cricket</string>
+    <string name="game_type_football">Football</string>
+    <string name="game_type_basketball">Basketball</string>
+    <string name="game_type_hockey">Hockey</string>
+    <string name="game_type_volleyball">Volleyball</string>
+    <string name="msg_no_matches">There are no upcoming matches as of now</string>
+
+    <string name="contest_type_contests">Contests</string>
+    <string name="contest_type_mycontest">My Contest(0)</string>
+    <string name="contest_type_myteam">My Team(0)</string>
+
+    <string name="createteam_type_wk">WK(0)</string>
+    <string name="createteam_type_bat">BAT(0)</string>
+    <string name="createteam_type_ar">AR(0)</string>
+    <string name="createteam_type_bowl">BOWL(0)</string>
+
+    <string name="menu_home">Home</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="option_wallet">My Wallet</string>
+    <string name="option_mytransaaction">My Transactions</string>
+    <string name="option_tnc">Terms and Condition</string>
+    <string name="option_privacy">Privacy Policy</string>
+    <string name="option_aboutus">About us</string>
+    <string name="option_logout">Logout</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="mymatch_upcoming">Upcoming</string>
+    <string name="mymatch_live">Live</string>
+    <string name="mymatch_completed">Completed</string>
+
+    <string name="downloading">Downloading...</string>
+    <string name="title_file_download">APK is downloading</string>
+    <string name="storage_access_required">Storage access is required to downloading the file.</string>
+    <string name="storage_permission_denied">Storage permission request was denied.</string>
+    <string name="ok">OK</string>
+
+    <string name="facebook_app_id">251742452647735</string>
+    <string name="fb_login_protocol_scheme">fb251742452647735</string>
+    <string name="reffer"><![CDATA[Reffer & Earn]]></string>
+
+
+    <string-array name="india_states">
+        <item>Andaman and Nicobar Islands</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+        <item>Chhattisgarh</item>
+        <item>Dadra and Nagar Haveli</item>
+        <item>Daman and Diu</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Lakshadweep</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Orissa</item>
+        <item>Pondicherry</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttaranchal</item>
+        <item>Uttar Pradesh</item>
+        <item>West Bengal</item>
+    </string-array>
+
+</resources>

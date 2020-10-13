@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="ninja11.fantasy.ui.home.FixtureCricketFragment"
+        android:label="@string/title_home"
+        tools:layout="fragment_all_games" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="ninja11.fantasy.ui.dashboard.MyMatchesFragment"
+        android:label="@string/title_mymatches"
+        tools:layout="@layout/fragment_mymatches" />
+
+    <fragment
+        android:id="@+id/navigation_myaccount"
+        android:name="ninja11.fantasy.ui.dashboard.MyAccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_myaccounts" />
+
+    <fragment
+        android:id="@+id/navigation_more"
+        android:name="ninja11.fantasy.ui.notifications.MoreOptionsFragment"
+        android:label="@string/title_more"
+        tools:layout="@layout/fragment_moreoptions" />
+</navigation>

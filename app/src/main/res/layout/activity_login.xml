@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="contentviews"
+            type="ninja11.fantasy.ui.login.LoginScreenActivity" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/grey_lighter_dense"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp"
+            android:layout_alignParentTop="true"
+            android:fitsSystemWindows="true"
+            android:background="@drawable/oval"
+            style="@style/ToolbarTheme2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_20sdp"
+              android:layout_centerHorizontal="true">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/circle_green"
+                    android:backgroundTint="@color/white">
+
+                    <ImageView
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/logo_dark"
+                        android:scaleType="fitCenter"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:text="Login with"
+                    android:fontFamily="@font/circular_medium"
+                    android:gravity="center_horizontal"
+                    android:textSize="25sp"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/login_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:orientation="vertical"
+
+                    >
+
+                    <com.google.android.gms.common.SignInButton
+                        android:id="@+id/sign_in_button"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_12sdp"
+                       android:textAlignment="center"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/_30sdp"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:background="@drawable/bottom"-->
+<!--                android:backgroundTint="@color/background_default"/>-->
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/tnc_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo_banner" />
+
+
+
+            <TextView
+                android:id="@+id/checkbox_tnc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="By creating an account or logging in, you agree to SkoreOn"
+                android:fontFamily="@font/tunga"
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/text" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/txt_tnc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Condition of Use"
+                    android:fontFamily="@font/tunga"
+                    android:textColor="@color/text"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" and "
+                    android:fontFamily="@font/tunga"
+                    android:textColor="@color/text"/>
+
+                <TextView
+                    android:id="@+id/txt_privacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy"
+                    android:fontFamily="@font/tunga"
+                    android:textColor="@color/text"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            android:visibility="gone"
+            android:id="@+id/loaderLogin"
+            layout="@layout/my_loader"/>
+
+
+
+    </RelativeLayout>
+
+</layout>

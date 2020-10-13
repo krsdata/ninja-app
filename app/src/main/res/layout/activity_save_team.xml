@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="contentviews"
+            type="ninja11.fantasy.TeamPreviewActivity" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_lighter_dense"
+        tools:context="skoreon.fantasy.CreateTeamActivity"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:id="@+id/linear_top_bar"
+            android:layout_width="match_parent"
+            android:background="@drawable/gradient"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_44sdp"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/image_back"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:src="@drawable/ic_back"
+                    android:gravity="center"
+                    android:tint="@color/white"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Create Team"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/_22sdp"
+                    android:fontFamily="@font/montserrat_medium"/>
+
+
+                <ImageView
+                    android:id="@+id/howToplay"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_toLeftOf="@+id/img_wallet"
+                    android:src="@drawable/help"
+                    android:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/img_wallet"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:src="@drawable/wallet_new"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dip"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/linear_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_top_bar"
+            android:background="@color/background_default"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/match_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10h 21m left"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose your Captain , Vice Captain and Trump player"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:textColor="@color/text"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/montserrat_bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="T gets 3x points, C gets 2x points, VC gets 1.5x points"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/montserrat_regular"
+                />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linear_indicator">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_save_team"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="70dp"
+                android:clipToPadding="false"/>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            >
+            <TextView
+                android:id="@+id/team_preview"
+                android:layout_width="125dip"
+                android:layout_height="match_parent"
+                android:text="TEAM PREVIEW"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:fontFamily="@font/montserratsemibold"
+                android:backgroundTint="@color/fab"
+                android:background="@drawable/button_selector_white"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/team_continue"
+                android:layout_width="125dip"
+                android:layout_height="match_parent"
+                android:text="SAVE TEAM"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginLeft="18dip"
+                android:fontFamily="@font/montserratsemibold"
+                android:backgroundTint="@color/color_card"
+                android:background="@drawable/default_rounded_button_sportsfight"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

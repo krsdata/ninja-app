@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/leaders_rows"
+  android:layout_width="match_parent"
+  android:layout_height="@dimen/_45sdp"
+  android:background="@color/white"
+  android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+  android:orientation="horizontal">
+   <LinearLayout
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_gravity="center_vertical"
+       android:gravity="center_vertical">
+       <com.mikhaellopez.circularimageview.CircularImageView
+           android:id="@+id/profile_image"
+           android:layout_width="45dp"
+           android:layout_height="45dp"
+           android:src="@drawable/ic_profile"/>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_marginLeft="@dimen/_10sdp">
+
+           <TextView
+               android:id="@+id/team_name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/open_sans_light"
+               android:text="EXODUSX1(T1)"
+               android:textColor="@color/text"
+               android:textSize="16sp" />
+
+           <TextView
+               android:id="@+id/team_won_status"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="You Won $35"
+               android:textColor="@color/green"
+               android:fontFamily="@font/montserrat_medium"
+               android:textSize="14sp"/>
+       </LinearLayout>
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|right">
+        <TextView
+            android:id="@+id/points"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text"
+            android:text="424.5"
+            android:textSize="@dimen/_10sdp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:text="#"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/montserrat_medium"/>
+
+            <TextView
+                android:id="@+id/player_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:text="4368"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_medium"/>
+
+
+            <ImageView
+                android:id="@+id/match_status"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@color/text"
+                android:src="@drawable/ic_arrow_drop_up_black_24dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="ninja11.fantasy.ui.home.FixtureCricketFragment" />
+    </data>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/all_game_view_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:id="@+id/linear_empty_contest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No matches are scheduled yet!!"
+            />
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="20dp"
+            android:padding="40dp"
+            android:background="@drawable/circle_text"
+            android:src="@drawable/ic_trophy"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please wait for our next updates!"
+            />
+
+        <TextView
+            android:id="@+id/btn_empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="READ Sportsfight Policies"
+            android:textSize="10sp"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:background="@drawable/default_rounded_button_sportsfight"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

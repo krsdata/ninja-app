@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="ninja11.fantasy.ui.contest.ContestFragment" />
+    </data>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_lighter_dense">
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/contest_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/contest_view_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="50dp"
+                android:clipToPadding="false"/>
+
+                <LinearLayout
+                    android:id="@+id/linear_empty_contest"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No matches are scheduled yet!!" />
+
+                    <ImageView
+                        android:layout_width="240dp"
+                        android:layout_height="240dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/circle_text"
+                        android:padding="40dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_trophy" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Please wait for our next updates!" />
+
+                    <TextView
+                        android:id="@+id/btn_empty_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/default_rounded_button_sportsfight"
+                        android:fontFamily="@font/montserratsemibold"
+                        android:padding="10dp"
+                        android:text="READ Sportsfight Policies"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_create_team"
+                android:layout_width="wrap_content"
+                android:text="Create A Team"
+                android:textAllCaps="true"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:textColor="@color/fab"
+                android:layout_height="wrap_content"
+                app:strokeColor="@color/fab"
+                android:backgroundTint="@color/white"
+                app:strokeWidth="@dimen/_2sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+</layout>

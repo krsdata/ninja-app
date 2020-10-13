@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="ninja11.fantasy.ui.home.FixtureCricketFragment" />
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_lighter_dense"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/label_players_counts"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Select 1 - 4 Wicket - Keepers"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_15sdp"
+        android:textColor="@color/text"
+        android:background="@color/viewE0"
+        android:textSize="14sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Selected By"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_15sdp"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Points"
+            android:paddingStart="@dimen/_30sdp"
+            android:layout_centerVertical="true"
+           android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Credits"
+            android:layout_centerVertical="true"
+           android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/_15sdp"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            />
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_create_players_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="80dp"
+        android:clipToPadding="false"/>
+
+</LinearLayout>
+</layout>

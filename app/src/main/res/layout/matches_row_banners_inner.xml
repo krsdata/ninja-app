@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/banner_height"
+    android:layout_marginTop="@dimen/matches_view_top_margin"
+    android:layout_marginLeft="@dimen/matches_view_left_margin_inner"
+    android:layout_marginRight="@dimen/matches_view_right_margin_inner"
+    >
+
+   <ImageView
+       android:id="@+id/image_banner"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scaleType="fitXY"
+       android:adjustViewBounds="true"/>
+</LinearLayout>

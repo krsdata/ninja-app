@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="accountsmodel"
+            type="ninja11.fantasy.ui.dashboard.MyAccountFragment" />
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_lighter_dense">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_8sdp">
+
+            <RelativeLayout
+                    android:id="@+id/account_details"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:background="@drawable/bg_text"
+                        android:layout_marginTop="30dp"
+                        android:backgroundTint="@color/color_card"
+                        android:foreground="?android:attr/selectableItemBackground">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/profileName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Emma"
+                                android:gravity="center"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:layout_marginTop="@dimen/_6sdp"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:fontFamily="@font/circular_medium"
+                                android:layout_gravity="center_horizontal"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_marginStart="@dimen/_18sdp"
+                                android:layout_marginEnd="@dimen/_20sdp"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_20sdp"
+                                android:layout_marginBottom="@dimen/_16sdp">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btnEditProfile"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:backgroundTint="@color/white"
+                                    app:cornerRadius="5dp"
+                                    android:singleLine="true"
+                                    android:text="Edit Profile "
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text"/>
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btnVerifyAccount"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:backgroundTint="@color/fab"
+                                    app:cornerRadius="5dp"
+                                    android:singleLine="true"
+                                    android:text="Verify Accounts "
+                                    android:layout_marginStart="@dimen/_11sdp"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:scaleType="centerCrop"
+                        android:id="@+id/profileImg"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="@dimen/_18sdp"
+                        app:civ_border_width="@dimen/_3sdp"
+                        app:civ_border_color="@color/white"
+                         app:civ_border="true"
+                        android:src="@drawable/dummy"/>
+
+                </RelativeLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/account_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_below="@+id/account_details"
+                android:background="@drawable/bg_text"
+                android:backgroundTint="@color/white"
+                app:tabTextAppearance="@style/CustomTextAppearanceTab"
+                android:layout_marginTop="@dimen/_6sdp"
+                app:tabIndicatorColor="@color/fab"
+                app:tabSelectedTextColor="@color/text"
+                app:tabGravity="fill"
+                app:tabMode="fixed" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/account_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/account_tabs"
+                android:background="@drawable/bg_text"
+                android:backgroundTint="@color/white"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </RelativeLayout>
+
+
+</LinearLayout>
+</layout>

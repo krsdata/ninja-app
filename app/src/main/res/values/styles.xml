@@ -1,0 +1,119 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme_app" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:navigationIcon">@drawable/ic_arrow_back_black_24dp</item>
+
+    </style>
+
+
+    <style name="ToolbarTheme2" parent="Widget.AppCompat.Toolbar">
+
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="titleTextAppearance">@style/TitleTextStyle.</item>
+
+
+    </style>
+
+    <style name="TitleTextStyle." parent="TitleTextStyle">
+        <item name="color">@color/white</item>
+        <item name="actionBarSize">@dimen/_22sdp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="ToolbarTheme3" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+    </style>
+
+    <style name="dashboard_theme"  parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="document_verify_text"  parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="fontFamily">@font/tunga</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ground_player_size_style">
+        <item name="android:width">@dimen/_135sdp</item>
+        <item name="android:height">@dimen/_35sdp</item>
+    </style>
+
+    <style name="ground_style_info">
+        <item name="android:textSize">@dimen/_8sdp</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop"> @dimen/_7sdp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="ground_style_players_info">
+        <item name="android:textSize">@dimen/_7sdp</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingLeft">@dimen/_5sdp</item>
+        <item name="android:paddingRight">@dimen/_5sdp</item>
+    </style>
+
+    <style name="dialog_theme" parent="android:Theme" >
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="Theme.MaterialComponents.Light.NoActionBar" />
+
+<!--    <style name="ToolbarColoredBackArrow" parent="AppTheme_app">-->
+<!--        <item name="android:textColorSecondary">@color/black</item>-->
+<!--        <item name="android:textStyle">bold</item>-->
+<!--        <item name="android:fontFamily">@font/roboto</item>-->
+<!--    </style>-->
+
+    <style name="TitleTextStyle" parent="AppTheme_app">
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="CustomTextAppearanceTab" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+<!--    <style name="TextAppearance.MyApp.Widget.ActionBar.Title" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">-->
+<!--        <item name="android:textAllCaps">false</item>-->
+<!--    </style>-->
+</resources>

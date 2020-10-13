@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:background="@color/grey_lighter_dense"
+    app:cardCornerRadius="6sp"
+    >
+   <LinearLayout
+       android:id="@+id/linear_"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:padding="@dimen/_5sdp"
+       >
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:minHeight="25dp"
+          android:paddingLeft="8dip"
+          android:paddingRight="8dip"
+          android:gravity="center_vertical"
+          >
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Share this contest with your friends"
+             android:textSize="@dimen/small_info_size"
+             android:fontFamily="@font/montserrat_regular"
+             android:textColor="@color/text"/>
+
+         <ImageView
+             android:layout_width="15dp"
+             android:layout_height="15dp"
+             android:src="@drawable/ic_share_black_24dp"
+             android:layout_alignParentRight="true"
+             android:tint="@color/text"/>
+      </RelativeLayout>
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/matches_view_left_margin_inner"
+          android:layout_marginRight="@dimen/matches_view_right_margin_inner"
+          >
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Prize Pool"
+             android:textSize="@dimen/small_info_size"
+             android:fontFamily="@font/montserrat_regular"
+             android:textColor="@color/text"/>
+
+         <TextView
+             android:id="@+id/contest_info"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Entry"
+             android:fontFamily="@font/montserrat_regular"
+             android:textColor="@color/text"
+             android:layout_alignParentRight="true"/>
+      </RelativeLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="@dimen/_8sdp"
+          >
+
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_weight="3"
+             android:layout_height="wrap_content"
+             android:gravity="center_vertical"
+             android:orientation="horizontal">
+            <TextView
+                android:id="@+id/contest_prize_pool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs 50 LAKHS"
+                android:textSize="@dimen/header_size"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/text"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dip"
+                android:fontFamily="@font/montserrat_medium"
+                />
+         </LinearLayout>
+
+
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginRight="5dip"
+             android:gravity="right">
+            <TextView
+                android:id="@+id/contest_entry_prize"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="Rs39"
+                android:gravity="center"
+                android:textSize="@dimen/header_size"
+                android:padding="6dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/default_rounded_button_sportsfight"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/color_card"
+                android:textStyle="bold"
+                android:fontFamily="@font/open_sans_semibold"
+                />
+
+
+         </LinearLayout>
+
+
+      </LinearLayout>
+      <LinearLayout
+          android:id="@+id/upcoming_linear_contest_view"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginTop="@dimen/matches_gap_between_each_views"
+          android:layout_marginLeft="@dimen/matches_view_left_margin_inner"
+          android:layout_marginRight="@dimen/matches_view_right_margin_inner">
+         <ProgressBar
+             android:id="@+id/contest_progress"
+             android:layout_width="match_parent"
+             android:layout_height="10dp"
+             android:indeterminateOnly="false"
+             android:progressDrawable="@drawable/progressbar_inderminate"
+             android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+             />
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="25dp"
+             android:orientation="horizontal"
+             android:layout_marginTop="7dip"
+             >
+            <TextView
+                android:id="@+id/total_spot_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1,979 spots left"
+                android:textColor="@color/text"
+                android:textSize="13dp"
+                android:fontFamily="@font/montserrat_medium"
+
+                />
+
+            <TextView
+                android:id="@+id/total_spot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50,000 spots"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text"
+                android:textSize="13dp"
+                android:fontFamily="@font/montserrat_medium"
+                />
+
+         </RelativeLayout>
+
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="35dp"
+          android:layout_marginTop="3dip"
+          android:gravity="center_vertical"
+          android:background="@color/color_circle"
+          android:paddingLeft="@dimen/_7sdp"
+          android:paddingRight="@dimen/_7sdp"
+          android:orientation="horizontal">
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="match_parent"
+             android:gravity="center_vertical|left"
+             android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/trophy_first_pos"
+                />
+            <TextView
+                android:id="@+id/first_prize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="₹5 Lakh"
+                android:textSize="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:fontFamily="@font/montserrat_bold"/>
+         </LinearLayout>
+
+
+<!--         <LinearLayout-->
+<!--             android:layout_width="0dp"-->
+<!--             android:layout_weight="1"-->
+<!--             android:layout_height="match_parent"-->
+<!--             android:gravity="center"-->
+<!--             android:orientation="horizontal">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="18dp"-->
+<!--                android:layout_height="18dp"-->
+<!--                android:src="@drawable/abc_ic_menu_copy_mtrl_am_alpha"-->
+<!--                android:scaleType="centerInside"-->
+<!--                android:gravity="center"-->
+<!--                android:tint="@color/text"-->
+
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/max_allowed_team"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Upto 11 Entries"-->
+<!--                android:textSize="@dimen/_6sdp"-->
+<!--                android:layout_marginLeft="@dimen/_3sdp"-->
+<!--                android:fontFamily="@font/montserrat_regular"/>-->
+<!--         </LinearLayout>-->
+
+<!--         <LinearLayout-->
+<!--             android:layout_width="0dp"-->
+<!--             android:layout_weight="1"-->
+<!--             android:layout_height="match_parent"-->
+<!--             android:gravity="center_vertical|right"-->
+<!--             android:orientation="horizontal"-->
+<!--             >-->
+<!--            <TextView-->
+<!--                android:id="@+id/contest_cancellation"-->
+<!--                android:layout_width="@dimen/_17sdp"-->
+<!--                android:layout_height="@dimen/_18sdp"-->
+<!--                android:text="C"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:fontFamily="sans-serif-condensed-medium"-->
+<!--                android:backgroundTint="@color/fab"-->
+<!--                android:background="@drawable/default_rounded_button_sportsfight"-->
+<!--                />-->
+
+<!--         </LinearLayout>-->
+
+      </LinearLayout>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recycler_team_list"
+          android:layout_marginTop="@dimen/_10sdp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+   </LinearLayout>
+
+</androidx.cardview.widget.CardView>

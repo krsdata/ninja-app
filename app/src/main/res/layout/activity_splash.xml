@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <data>
+        <variable
+            name="contentviews"
+            type="ninja11.fantasy.SplashScreenActivity" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/parent_splash_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/splash"/>
+    </RelativeLayout>
+
+</layout>

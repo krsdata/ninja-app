@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="12dp"
+    app:cardCornerRadius="6dp"
+    app:cardBackgroundColor="@color/color_card"
+    android:layout_marginTop="@dimen/_6sdp"
+    android:layout_marginLeft="@dimen/matches_view_left_margin_consolidated"
+    android:layout_marginRight="@dimen/matches_view_left_margin_consolidated"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_6sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:background="@drawable/bg_text"
+                android:backgroundTint="@color/white">
+                
+                <ImageView
+                    android:id="@+id/teama_logo"
+                    android:layout_width="35dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/flag_indian"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/upcoming_opponent1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="AAD"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_6sdp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You Won"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/_8sdp"/>
+
+            <TextView
+                android:id="@+id/winning_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="395"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/completed_match_status"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Completed"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/fab"
+                android:background="@drawable/orange_button_bg"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_8sdp" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:background="@drawable/bg_text"
+                android:backgroundTint="@color/white">
+
+                <ImageView
+                    android:id="@+id/teamb_logo"
+                    android:layout_width="35dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/flag_newzeland"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/upcoming_opponent2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="NZ"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_6sdp"/>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

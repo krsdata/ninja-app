@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="contentviews"
+            type="ninja11.fantasy.AddMoneyActivity" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_lighter_dense">
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_default"
+            android:orientation="vertical"
+            tools:context="skoreon.fantasy.CreateTeamActivity">
+
+            <RelativeLayout
+                android:id="@+id/tool"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/gradient">
+
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    style="@style/ToolbarTheme2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="top">
+
+                        <ImageView
+                            android:id="@+id/image_back"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:padding="@dimen/_4sdp"
+                            android:src="@drawable/ic_back"
+                            android:tint="@color/white" />
+
+                        <TextView
+                            style="@style/TitleTextStyle."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/circular_medium"
+                            android:text="Add Money"
+                            android:textColor="@color/white"
+                            android:textSize="22sp" />
+                    </RelativeLayout>
+                </androidx.appcompat.widget.Toolbar>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/bottom"
+                    android:backgroundTint="@color/grey_lighter_dense" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/top_linear_balance"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_below="@+id/tool"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/rounded_corner_white"
+                android:backgroundTint="@color/color_card"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center"
+                    android:text="Current Balance"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/wallet_total_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/rounded_corner_white"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center"
+                    android:text="₹188"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/_16sdp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_wallet_Added"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_below="@+id/top_linear_balance"
+                android:orientation="vertical"
+                android:padding="10dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Amount to Add"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/_16sdp" />
+
+                <EditText
+                    android:id="@+id/edit_amounts"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/purple_sqaure"
+                    android:drawableLeft="@drawable/ic_rupee"
+                    android:fontFamily="@font/roboto"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:text="500"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/_18sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <TextView
+                        android:id="@+id/add_100rs"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="100"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <TextView
+                        android:id="@+id/add_200rs"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="200"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <TextView
+                        android:id="@+id/add_300rs"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="300"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <TextView
+                        android:id="@+id/add_500rs"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_btn_pink"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="500"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lineapayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_wallet_Added"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_60sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Select your payment method"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/_16sdp" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    app:cardCornerRadius="@dimen/_4sdp"
+                    android:elevation="@dimen/_6sdp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:id="@+id/fancy_radio_group"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_6sdp"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/rb1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_gravity="center_horizontal"
+                                android:paddingStart="@dimen/_3sdp"
+                                android:drawableStart="@drawable/paytm_new"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/viewE0"/>
+
+                            <RadioButton
+                                android:id="@+id/rb2"
+                                android:layout_width="match_parent"
+                                android:paddingStart="@dimen/_3sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:drawableStart="@drawable/gpey_new" />
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:text="Add Amount"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/lineapayment"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@+id/linear_wallet_Added"-->
+            <!--                android:layout_margin="10dp"-->
+            <!--                android:background="@drawable/rounded_corner_white"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:padding="10dip">-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Wallet Payments"-->
+            <!--                    android:textColor="@color/text"-->
+            <!--                    android:textSize="@dimen/_16sdp"-->
+            <!--                    android:layout_marginTop="10dp"-->
+            <!--                    android:fontFamily="@font/montserrat_regular"/>-->
+
+
+            <!--                <RadioGroup-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content">-->
+            <!--                    <RadioButton-->
+            <!--                        android:id="@+id/use_paytm_wallet"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="@dimen/_45sdp"-->
+            <!--                        android:layout_marginLeft="4dp"-->
+            <!--                        android:layout_marginRight="4dp"-->
+            <!--                        android:fontFamily="@font/montserrat_bold"-->
+            <!--                        android:text="Paytm"-->
+            <!--                        android:checked="true"-->
+            <!--                        android:drawablePadding="10dp"-->
+            <!--                        android:drawableLeft="@drawable/icon_paytm"-->
+            <!--                        android:textSize="@dimen/_12sdp"-->
+            <!--                        />-->
+
+            <!--                    <View-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="0.8dp"-->
+            <!--                        android:layout_marginTop="5dp"-->
+            <!--                        android:background="@color/greyish" />-->
+
+            <!--                    <RadioButton-->
+            <!--                        android:id="@+id/use_wallet_gpay"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="@dimen/_45sdp"-->
+            <!--                        android:layout_marginLeft="4dp"-->
+            <!--                        android:layout_marginRight="4dp"-->
+            <!--                        android:fontFamily="@font/montserrat_bold"-->
+            <!--                        android:text="Gpay"-->
+            <!--                        android:drawablePadding="10dp"-->
+            <!--                        android:drawableLeft="@drawable/icon_google"-->
+            <!--                        android:textSize="@dimen/_12sdp" />-->
+
+            <!--                    <View-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="0.8dp"-->
+            <!--                        android:layout_marginTop="10dp"-->
+            <!--                        android:background="@color/greyish" />-->
+            <!--                    <RadioButton-->
+            <!--                        android:id="@+id/use_wallet_phonepay"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="@dimen/_45sdp"-->
+            <!--                        android:layout_marginLeft="4dp"-->
+            <!--                        android:layout_marginRight="4dp"-->
+            <!--                        android:fontFamily="@font/montserrat_bold"-->
+            <!--                        android:text="PhonePay"-->
+            <!--                        android:visibility="gone"-->
+            <!--                        android:drawablePadding="10dp"-->
+            <!--                        android:drawableLeft="@drawable/icon_phonepay"-->
+            <!--                        android:textSize="@dimen/_12sdp" />-->
+
+            <!--                    <View-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="0.8dp"-->
+            <!--                        android:layout_marginTop="10dp"-->
+            <!--                        android:visibility="gone"-->
+            <!--                        android:background="@color/greyish" />-->
+
+            <!--                </RadioGroup>-->
+
+            <!--            </LinearLayout>-->
+            <!--            <RelativeLayout-->
+            <!--                android:layout_below="@+id/lineapayment"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="@dimen/_45sdp"-->
+            <!--                android:layout_margin="20dp"-->
+            <!--                android:backgroundTint="@color/colorPrimary"-->
+            <!--                android:background="@drawable/default_rounded_button_sportsfight"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:padding="10dip">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/add_Cash"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:text="ADD CASH"-->
+            <!--                    android:background="@color/colorPrimary"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:textColor="@color/white"-->
+            <!--                    android:textSize="@dimen/_12sdp"-->
+            <!--                    android:fontFamily="@font/montserrat_bold"/>-->
+            <!--            </RelativeLayout>-->
+
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

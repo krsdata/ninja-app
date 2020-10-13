@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="12dp">
+
+    <RelativeLayout
+        android:id="@+id/linear_trades_status"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/viewE0" />
+
+        <RelativeLayout
+            android:id="@+id/rel_player_image"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/selected_player_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:scaleType="centerInside"
+                android:src="@drawable/wk_red" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/selected_player_country"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/color_card"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="AU-W"
+                    android:textColor="@color/white"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:id="@+id/selected_player_playing_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/error_color_material_dark"
+                    android:backgroundTint="@color/fab"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="BAT"
+                    android:textColor="@color/white"
+                    android:textSize="8sp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_toLeftOf="@+id/linear_selection_"
+            android:layout_toRightOf="@+id/rel_player_image"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/selected_player_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/selected_player_points"
+                android:padding="3dp"
+                android:text="Virat Kohli"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/text"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/set_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_below="@id/selected_player_name"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="8.5"
+                android:textColor="@color/text"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/selected_player_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+               android:layout_marginTop="@dimen/_16sdp"
+                android:padding="3dp"
+                android:text="74"
+                android:textColor="@color/text"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_selection_"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/role_type_trump"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:background="@drawable/circle_pink"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="T"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/save_team_text_size_normal" />
+
+                <TextView
+                    android:id="@+id/selected_trump_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="6.08%"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/_6sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/role_type_captain"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:background="@drawable/circle_pink"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:text="C"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/save_team_text_size_normal" />
+
+                <TextView
+                    android:id="@+id/selected_captain_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:padding="3dp"
+                    android:text="0.8%"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/_6sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="5dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/role_type_vicecaptain"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:background="@drawable/circle_pink"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="VC"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/save_team_text_size_normal" />
+
+                <TextView
+                    android:id="@+id/selected_vc_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="3%"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/_6sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

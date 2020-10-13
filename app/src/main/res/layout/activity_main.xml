@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="contentviews"
+            type="ninja11.fantasy.MainActivity" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/tool_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentTop="true"
+                style="@style/ToolbarTheme2"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_centerVertical="true"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:gravity="top"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_height="@dimen/_40sdp">
+                                    <ImageView
+                                         android:layout_width="wrap_content"
+                                            android:layout_height="@dimen/_34sdp"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_centerInParent="true"
+                                            android:src="@drawable/logo" />
+
+                                        <com.mikhaellopez.circularimageview.CircularImageView
+                                            android:id="@+id/profile_image"
+                                            android:layout_width="@dimen/_36sdp"
+                                            android:layout_height="@dimen/_36sdp"
+                                            android:scaleType="centerCrop"
+                                            android:layout_alignParentStart="true"
+                                            app:civ_border_color="@color/white"
+                                            app:civ_border="true"
+                                            app:civ_border_width="2dp"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_centerVertical="true"
+                                            android:src="@drawable/dummy" />
+
+                                        <ImageView
+                                            android:id="@+id/img_wallet_amount"
+                                            android:layout_width="@dimen/_24sdp"
+                                            android:layout_height="@dimen/_24sdp"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_centerVertical="true"
+                                            android:src="@drawable/wallet_new"
+                                            android:tint="@color/white" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/_20sdp"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:background="@drawable/bottom"-->
+<!--                android:backgroundTint="@color/grey_lighter_dense"/>-->
+
+        </RelativeLayout>
+
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/tool"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_130sdp"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:background="@drawable/gradient">-->
+
+<!--            <androidx.appcompat.widget.Toolbar-->
+<!--                android:id="@+id/toolbar"-->
+<!--                style="@style/ToolbarTheme3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/_100sdp"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:fitsSystemWindows="true">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="@dimen/_20sdp"-->
+<!--                    android:layout_marginTop="@dimen/_22sdp"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/_75sdp"-->
+<!--                        android:layout_height="@dimen/_34sdp"-->
+<!--                        android:layout_alignParentTop="true"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:src="@drawable/sport" />-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/profile_image"-->
+<!--                        android:layout_width="@dimen/_36sdp"-->
+<!--                        android:layout_height="@dimen/_36sdp"-->
+<!--                        android:layout_alignParentStart="true"-->
+<!--                        android:layout_alignParentTop="true"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:background="@drawable/bg_text"-->
+<!--                        android:src="@drawable/dummy_two" />-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/img_wallet_amount"-->
+<!--                        android:layout_width="@dimen/_24sdp"-->
+<!--                        android:layout_height="@dimen/_24sdp"-->
+<!--                        android:layout_alignParentTop="true"-->
+<!--                        android:layout_alignParentEnd="true"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:src="@drawable/wallet_new"-->
+<!--                        android:tint="@color/white" />-->
+
+<!--                </RelativeLayout>-->
+
+
+<!--            </androidx.appcompat.widget.Toolbar>-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/_30sdp"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:background="@drawable/bottom"-->
+<!--                android:backgroundTint="@color/background_default"/>-->
+
+
+<!--        </RelativeLayout>-->
+
+
+
+
+
+
+        <ninja11.fantasy.bottom_nav.BottomNavBar
+            android:id="@+id/nav_view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:bn_curve_margin="6dp"
+            android:layout_alignParentBottom="true"
+            app:bn_curve_rounded_corner_radius="8dp"
+            app:bn_curve_vertical_offset="0dp"
+            app:bn_fab_background_color="@color/reply_orange_500"
+            app:bn_fab_icon_color="@color/white"
+            app:bn_fab_menu_index="2"
+            app:bn_fab_size="normal"
+            app:bn_menu="@menu/bottom_nav_menu"
+            app:menu="@menu/bottom_nav_menu" />
+        <!--    <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_54sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+
+                app:fabAlignmentMode="center"
+                app:itemIconTint="@color/white"
+                app:itemTextColor="@color/white"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/bottom_nav_menu" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/nav_view1"
+            android:layout_below="@id/tool_layout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/nav_host_fragment"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/mobile_navigation" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</layout>

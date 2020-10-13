@@ -1,0 +1,8 @@
+ext {
+    getLibraryVersionName = { ->
+        return "1.2"
+    }
+    getLibraryVersionCode = { ->
+        return 120
+    }
+}

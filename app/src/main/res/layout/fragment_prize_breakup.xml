@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <data>
+        <variable
+            name="viewmodel"
+            type="ninja11.fantasy.ui.leadersboard.PrizeBreakupFragment" />
+    </data>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_lighter_dense"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2sdp"
+                android:background="@color/viewE0"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/prize_view_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="50dp"
+                android:clipToPadding="false"/>
+
+             <ProgressBar
+                 android:id="@+id/progress_bar"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+</layout>

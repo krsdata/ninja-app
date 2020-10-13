@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="onRefernEarn"
+            type="ninja11.fantasy.InviteFriendsActivity.OnClickListners" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/tool"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/gradient">
+
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_alignParentTop="true"
+                    style="@style/ToolbarTheme2"
+                    android:orientation="vertical"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:gravity="top"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/image_back"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:src="@drawable/ic_back"
+                            android:gravity="center"
+                            android:tint="@color/white"
+                            android:padding="@dimen/_4sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/reffer"
+                            style="@style/TitleTextStyle."
+                            android:fontFamily="@font/circular_medium"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/white"
+                            android:layout_centerVertical="true"
+                            android:textSize="22sp" />
+                    </RelativeLayout>
+                </androidx.appcompat.widget.Toolbar>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/bottom"
+                    android:backgroundTint="@color/white"/>
+
+            </RelativeLayout>
+
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dip">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NO LIMITS ON REFFER AND EARN"
+                    android:fontFamily="@font/circular_medium"
+                    android:textColor="@color/text"
+                    android:textSize="28sp"/>
+                <View
+                    android:layout_width="200dp"
+                    android:layout_height="3dp"
+                    android:background="@color/grey"
+                    android:layout_marginTop="5dip"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Join your friends and family SkoreOn Journey!!"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="40dp"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Play and Win more exciting prizes"
+                    android:fontFamily="@font/open_sans_light"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dip"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/xml_textbox_bg"
+                        android:layout_marginTop="@dimen/_10sdp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textSize="13sp"
+                            android:text="Referral Code : "
+                            android:fontFamily="@font/roboto"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            />
+                        <TextView
+                            android:id="@+id/rereral_code"
+                            android:layout_width="match_parent"
+                            android:textSize="14sp"
+                            android:text="MANPRAS264"
+                            android:fontFamily="@font/roboto"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@drawable/default_rounded_button_sportsfight"
+                        android:layout_marginTop="@dimen/_10sdp">
+                        <TextView
+                            android:id="@+id/invite_friends"
+                            android:layout_width="match_parent"
+                            android:textSize="14sp"
+                            android:text="Invite your friends"
+                            android:fontFamily="@font/roboto"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:onClick="@{onRefernEarn::onInvite}"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="REFER WITH "
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="65dip"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp">
+                    <ImageView
+                        android:id="@+id/share_whatsapp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:onClick="@{onRefernEarn::onWhatsApp}"
+                        android:src="@drawable/ic_whatsapp"/>
+
+                    <ImageView
+                        android:id="@+id/share_facebook"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/facebook_logo"
+                        android:onClick="@{onRefernEarn::onFacebook}"/>
+
+                    <ImageView
+                        android:id="@+id/share_twitter"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/ic_twitter"
+                        android:onClick="@{onRefernEarn::onTwitter}"/>
+
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/more_options"
+                    android:layout_width="220dp"
+                    android:layout_height="35dp"
+                    android:text="@string/title_more"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/default_rounded_button_sportsfight"/>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
