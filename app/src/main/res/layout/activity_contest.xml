@@ -22,7 +22,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
-            android:layout_marginBottom="@dimen/_4sdp"
             android:orientation="vertical"
             >
             <RelativeLayout
@@ -85,7 +84,7 @@
                 app:cardElevation="12dp"
                 android:layout_marginBottom="@dimen/_12sdp"
                 app:cardCornerRadius="6dp"
-                app:cardBackgroundColor="@color/fab"
+                app:cardBackgroundColor="@color/white"
                 android:layout_marginLeft="@dimen/matches_view_left_margin_consolidated"
                 android:layout_marginRight="@dimen/matches_view_left_margin_consolidated"
                 >
@@ -127,7 +126,7 @@
                             android:textSize="@dimen/_12sdp"
                             android:maxLines="1"
                             android:singleLine="true"
-                            android:textColor="@color/white"
+                            android:textColor="@color/text"
                             android:fontFamily="@font/montserrat_bold"
                             android:text="AAD"
                             android:gravity="center_vertical"
@@ -149,7 +148,7 @@
                         android:layout_toEndOf="@+id/ll1"
                         android:layout_toStartOf="@id/ll3"
                         android:layout_alignParentTop="true"
-                        android:textColor="@color/white"
+                        android:textColor="@color/fab"
                         android:textSize="@dimen/login_text_size_18sp" />
 
 
@@ -183,7 +182,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="@dimen/_14sdp"
-                            android:textColor="@color/white"
+                            android:textColor="@color/text"
                             android:fontFamily="@font/montserrat_bold"
                             android:text="NZ"
                             android:maxLines="1"
@@ -210,7 +209,6 @@
         <RelativeLayout
             android:layout_below="@id/linear_top_bar"
             android:layout_width="match_parent"
-            android:layout_marginTop="@dimen/_6sdp"
             android:layout_height="match_parent">
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabs"

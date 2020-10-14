@@ -23,18 +23,36 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tournament_title"
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/circular_medium"
-                android:paddingStart="@dimen/_5sdp"
-                android:paddingEnd="@dimen/_5sdp"
-                android:singleLine="true"
-                android:text="Cricket League T10"
-                android:textColor="@color/text"
-                android:textSize="@dimen/small_info_size" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tournament_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/circular_medium"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:layout_alignParentStart="true"
+                    android:singleLine="true"
+                    android:text="Cricket League T10"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/small_info_size" />
+
+                <TextView
+                    android:id="@+id/completed_match_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="@dimen/_8sdp" />
+
+            </RelativeLayout>
 
             <View
                 android:layout_width="match_parent"
@@ -45,6 +63,7 @@
         </LinearLayout>
 
         <RelativeLayout
+            android:id="@+id/ll_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -93,47 +112,18 @@
                     />
             </LinearLayout>
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:orientation="vertical">
+                android:textSize="12sp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/text"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="395" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="You Won"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:textColor="@color/white"
-                    android:layout_gravity="center_horizontal"
-                    android:textSize="@dimen/_8sdp"/>
 
-                <TextView
-                    android:id="@+id/winning_price"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="12sp"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/montserrat_bold"
-                    android:text="395"
-                    android:layout_marginTop="@dimen/_6sdp"
-                    android:layout_gravity="center_horizontal" />
-
-                <TextView
-                    android:id="@+id/completed_match_status"
-                    android:layout_width="@dimen/_60sdp"
-                    android:layout_height="@dimen/_20sdp"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="Completed"
-                    android:gravity="center"
-                    android:layout_gravity="center_horizontal"
-                    android:backgroundTint="@color/fab"
-                    android:background="@drawable/orange_button_bg"
-                    android:textColor="@color/white"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:textSize="@dimen/_8sdp" />
-
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -179,69 +169,103 @@
             </LinearLayout>
 
         </RelativeLayout>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
 
         <RelativeLayout
-            android:id="@+id/opp2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_below="@id/ll_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/total_team_created"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:textColor="@color/text"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="395" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Teams"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:layout_marginStart="3dp"
+                    android:textSize="@dimen/country_code_size"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/open_sans_semibold"
+                    />
+
+                <TextView
+                    android:id="@+id/total_contest_joined"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/text"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="395" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contest"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:layout_marginStart="3dp"
+                    android:textSize="@dimen/country_code_size"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/open_sans_semibold"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You Won"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/green"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/_8sdp"/>
+
+                <TextView
+                    android:id="@+id/winning_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:paddingEnd="@dimen/_6sdp"
+                    android:textColor="@color/green"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="395"
+                    android:layout_gravity="center_horizontal" />
+
+
+            </LinearLayout>
+
 
         </RelativeLayout>
-
     </RelativeLayout>
 
-    <LinearLayout
-        android:id="@+id/upcoming_linear_contest_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/matches_view_left_margin_inner"
-        android:layout_marginTop="@dimen/matches_gap_between_each_views"
-        android:layout_marginRight="@dimen/matches_view_right_margin_inner"
-        android:orientation="horizontal"
-        android:visibility="gone">
 
-        <TextView
-            android:id="@+id/upcoming_contest_name"
-            android:layout_width="45dp"
-            android:layout_height="wrap_content"
-            android:background="@color/green_light"
-            android:fontFamily="@font/montserrat_bold"
-            android:gravity="center"
-            android:padding="3dip"
-            android:text="Mega"
-            android:textColor="@color/white"
-            android:textSize="@dimen/small_info_size" />
-
-        <TextView
-            android:id="@+id/upcoming_contest_price"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dip"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="₹1Crore"
-            android:textColor="@color/black"
-            android:textSize="@dimen/small_info_size" />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/free_view"
-        android:layout_width="@dimen/_65sdp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:background="@color/green_light"
-        android:fontFamily="@font/montserrat_bold"
-        android:gravity="center"
-        android:padding="3dip"
-        android:src="@drawable/left_triangle"
-        android:text="FREE"
-        android:textColor="@color/white"
-        android:textSize="@dimen/small_info_size" />
 
 </androidx.cardview.widget.CardView>

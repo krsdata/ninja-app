@@ -26,6 +26,7 @@ import ninja11.fantasy.ui.home.models.UsersPostDBResponse
 import ninja11.fantasy.databinding.FragmentMyCompletedBinding
 import ninja11.fantasy.utils.MyPreferences
 import ninja11.fantasy.utils.MyUtils
+import org.w3c.dom.Text
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -171,6 +172,7 @@ class MyCompletedMatchesFragment : Fragment() {
 
             viewHolder?.totalTeamCreated?.text = String.format("%d",objectVal.totalTeams)
             viewHolder?.totalContestJoined?.text = String.format("%d",objectVal.totalJoinContests)
+            viewHolder?.date?.text = objectVal.dateStart
 
 
             viewHolder?.teamAColorView?.setBackgroundColor(getRandomColor())
@@ -224,6 +226,7 @@ class MyCompletedMatchesFragment : Fragment() {
             val opponent1 = itemView.findViewById<TextView>(R.id.upcoming_opponent1)
             val opponent2 = itemView.findViewById<TextView>(R.id.upcoming_opponent2)
             val winningPrice = itemView.findViewById<TextView>(R.id.winning_price)
+             val  date = itemView.findViewById<TextView>(R.id.date)
 
             val totalTeamCreated = itemView.findViewById<TextView>(R.id.total_team_created)
             val totalContestJoined = itemView.findViewById<TextView>(R.id.total_contest_joined)

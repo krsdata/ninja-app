@@ -145,7 +145,7 @@ class ContestActivity : BaseActivity(), OnContestLoadedListener, OnContestEvents
 
             override fun onTicks(time:String) {
                 mBinding!!.matchTimer.text = time
-                mBinding!!.matchTimer.setTextColor(resources.getColor(R.color.white))
+                mBinding!!.matchTimer.setTextColor(resources.getColor(R.color.fab))
 
 
 
