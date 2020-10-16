@@ -210,7 +210,6 @@
                 android:layout_alignParentRight="true"
                 android:textSize="@dimen/_14sdp"
                 android:gravity="center"
-                android:backgroundTint="@color/fab"
                 android:textColor="@color/white"
                 android:fontFamily="@font/montserrat_medium"
                 />

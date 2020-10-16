@@ -40,12 +40,11 @@
                     android:layout_marginEnd="@dimen/_12sdp"
                     android:layout_height="@dimen/_40sdp">
                                     <ImageView
-                                         android:layout_width="wrap_content"
-                                            android:layout_height="@dimen/_34sdp"
-                                            android:layout_alignParentTop="true"
-                                            android:layout_centerInParent="true"
-                                        android:visibility="gone"
-                                            android:src="@drawable/logo" />
+                                         android:layout_width="@dimen/_150sdp"
+                                            android:layout_height="@dimen/_50sdp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                            android:src="@drawable/logo_trans" />
 
                                         <com.mikhaellopez.circularimageview.CircularImageView
                                             android:id="@+id/profile_image"

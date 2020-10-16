@@ -72,7 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:orientation="horizontal"
-            android:backgroundTint="@color/fab"
+            android:backgroundTint="@color/green"
             android:padding="10dp"
             android:background="@drawable/button_selector_white"
            >
